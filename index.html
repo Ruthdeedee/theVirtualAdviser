@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel=" stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Virtual Adviser</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Reviews and Ratings For Advisers</h2>
+    <p>Have you found an adviser and had a session with him or her? Cool! We'd like to hear the experience whether good or bad. Share your review about any adviser here! If you love 'em, rave about 'em and if otherwise, kindly tell us how you feel. Your reviews helps you, them and us - the community!</p>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="session">How did your last session with the Virtual Adviser you chose go?</label>
+      <select id="session" name="session" required>
+        <option value="">Select an option</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select>
+
+      <label for="adviserName">Name of the Adviser you chose:</label>
+      <input type="text" id="adviserName" name="adviserName">
+
+      <label for="category">Category chosen:</label>
+      <input type="text" id="category" name="category">
+
+      <label for="review">Provide a review about the Virtual Adviser:</label>
+      <textarea id="review" name="review" required></textarea>
+
+      <label for="solution">Were you able to find a solution to the issue or problem?</label>
+      <select id="solution" name="solution" required>
+        <option value="">Select an option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <label for="difficulty">What difficulties did you face trying to reach the Virtual Adviser you chose?</label>
+      <textarea id="difficulty" name="difficulty"></textarea>
+
+      <label for="flagging">Any Flagging Issue you would like to report about the conduct of the Virtual Adviser:</label>
+      <textarea id="flagging" name="flagging"></textarea>
+
+      <label for="engage">Would you love to engage this adviser another time?</label>
+      <select id="engage" name="engage" required>
+        <option value="">Select an option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <label for="rating">How would you rate the adviser?</label>
+      <select id="rating" name="rating" required>
+        <option value="">Select an option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label for="generalComment">General Comment about our platform and system?</label>
+      <textarea id="generalComment" name="generalComment"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
