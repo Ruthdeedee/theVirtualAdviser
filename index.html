@@ -9,10 +9,11 @@
 </head>
 <body>
   <div class="container">
-    <h2>Reviews and Ratings For Advisers</h2>
-    <p>Have you found an adviser and had a session with him or her? Cool! We'd like to hear the experience whether good or bad. Share your review about any adviser here! If you love 'em, rave about 'em and if otherwise, kindly tell us how you feel. Your reviews helps you, them and us - the community!</p>
+    <h2 class="video-align">Reviews and Ratings For Advisers</h2>
+    <p class="video-text">Have you found an adviser and had a session with him or her? Cool! We'd like to hear the experience whether good or bad. Share your review about any adviser here! If you love 'em, rave about 'em and if otherwise, kindly tell us how you feel. Your reviews helps you, them and us - the community!</p>
+
     <form id="feedbackForm">
-      <label for="name">Name:</label>
+      <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
 
       <label for="email">Email Address:</label>
@@ -31,7 +32,32 @@
       <input type="text" id="adviserName" name="adviserName">
 
       <label for="category">Category chosen:</label>
-      <input type="text" id="category" name="category">
+      <select id ="category" name="category" required>
+      <option value="">Select an option</option>
+        <option value="Health and Beauty">Health and Beauty</option>
+        <option value="Computing and Programming">Computing and Programming</option>
+        <option value="Relationships and Family">Relationships and Family</option>
+        <option value="Religion and Spirituality">Religion and Spirituality</option>
+        <option value="Children and Pets">Children and Pets</option>
+        <option value="Investing and Financial Literacy">Investing and Financial Literacy</option>
+        <option value="Family Planning">Family Planning</option>
+        <option value="Food and Drink">Food and Drink</option>
+        <option value="Mental Health">Mental Health</option>
+        <option value="Planning and Modeling">Planning and Modeling</option>
+        <option value="Photography">Photography</option>
+        <option value="Emergency and Rapid Response">Emergency and Rapid Response</option>
+        <option value="Creative Writing and Literature">Creative Writing and Literature</option>
+        <option value="Real Estate and Prospecting">Real Estate and Prospecting</option>
+        <option value="Legal Services">Legal Services</option>
+        <option value="Fashion and Style">Fashion and Style</option>
+        <option value="Science and Technology">Science and Technology</option>
+        <option value="Safety and Security">Safety and Security</option>
+        <option value="Navigation and Tourism">Navigation and Tourism</option>
+        <option value="Home and Gardening">Home and Gardening</option>
+        <option value="Career and Job Search">Career and Job Search</option>
+        <option value="Academics">Academics</option>
+        </select>
+
 
       <label for="review">Provide a review about the Virtual Adviser:</label>
       <textarea id="review" name="review" required></textarea>
@@ -60,8 +86,9 @@
 
       <label for="rating">How would you rate the adviser?</label>
       <select id="rating" name="rating" required>
-        <option value="">Select an option</option>
-        <option value="1">1</option>
+        <!-- <span class="star">&#9733;</span> -->
+          <option value="">Select an option</option>
+         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
@@ -71,7 +98,7 @@
       <label for="generalComment">General Comment about our platform and system?</label>
       <textarea id="generalComment" name="generalComment"></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">SUBMIT</button>
     </form>
 
     <script src="script.js"></script>

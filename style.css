@@ -1,7 +1,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Arial";
+  font-family: "Merriweather";
 }
 
 .container {
@@ -38,8 +38,8 @@ select {
 }
 
 button[type="submit"] {
-  background-color: yellow;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -49,4 +49,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: purple;
   color: yellow;
+}
+
+.video-text{
+  text-align: center;
+  justify-content: center;
+}
+
+.video-align{
+  text-align:center ;
+  justify-content: center;
 }
